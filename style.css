@@ -71,6 +71,11 @@ p{
     color:var(--lightgrey);
     border-radius: 65%;
     padding: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    place-content: center;
+    display: grid;
     border: none;
     cursor: pointer;
 }
