@@ -10,16 +10,17 @@ numbersContainer.addEventListener('click', e => {
     e.preventDefault();
     let numberSelected = e.target.innerText;
     rateNumberSelected.innerText = numberSelected;
-    console.log(numberSelected);
-    // if(numberSelected === 1){
-    
-    // }
+    // console.log(numberSelected);
+    if(numberSelected !== undefined){
+        submittedButton.addEventListener('click', () =>{            
+            mainState.style.display = 'none';
+            thankYouState.style.display= 'block';
+        });        
+    } 
+  
 });
 
-submittedButton.addEventListener('click', () =>{
-    mainState.style.display = 'none';
-    thankYouState.style.display= 'block';
-});    
+    
 
 backLanginBtn.addEventListener('click', () =>{
     mainState.style.display = 'block';
